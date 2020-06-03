@@ -14,11 +14,11 @@ const user: IUser = {
   }
 };
 
-const higherOrder = (cb: (num: number) => number) => {
+const myHigherOrder = (cb: (num: number) => number) => {
   cb(2);
 };
 
-higherOrder((num) => { return 3 });
+myHigherOrder((num) => { return 3 });
 
 const sayHello = (name: string): void | string => {
   return `hello ${name}`;
@@ -32,11 +32,5 @@ const returningPromise = (): Promise<string> => {
   });
 };
 
-
-
-
-
-
-
-
-//
+const bool = true;
+console.log('can you see this?');
